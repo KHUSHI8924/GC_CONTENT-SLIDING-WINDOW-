@@ -7,7 +7,7 @@ def gc_content(seq):
     total=len(seq)
     if total==0:
         return 0.0
-    return (g+c) / total * 100 
+    return (g+c) / total * 100
 
 def sliding_window_gc(seq:str, window_size:int , step:int):
     starts=[]
@@ -19,6 +19,7 @@ def sliding_window_gc(seq:str, window_size:int , step:int):
         gc_vals.append(gc)
     return starts, gc_vals 
 
+
 def main():
     seq=("ATGCGGTACGATGACGATGACGATGACGATGACAGTAGACGCGCGATGACGATGACGA" *4)
     window_size = 50
@@ -27,10 +28,10 @@ def main():
     positions, gc_vals = sliding_window_gc(seq, window_size, step)
     
     plt.figure(figsize=(8,4))
-    plt.plot (positions, gc_vals, marker='o', linestyle='-', color= 'blue')
+    plt.plot (positions, gc_vals, marker ='o', linestyle ='-', color = 'blue')
     plt.xlabel("Window start position")
     plt.ylabel("GC Content (%)")
-    plt.title(f"Sliding window GC content (window = {window_size}, step= {step})")
+    plt.title(f"SLIDING WINDOW GC CONTENT (window = {window_size}, step= {step})")
     plt.grid(True)
     plt.tight_layout()
     plt.show()
