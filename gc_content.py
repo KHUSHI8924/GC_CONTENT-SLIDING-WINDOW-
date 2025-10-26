@@ -7,12 +7,12 @@ def gc_content(seq):
     total=len(seq)
     if total==0:
         return 0.0
-    return (g+c) / total * 100
+    return (g+c) / total * 100 
 
 def sliding_window_gc(seq:str, window_size:int , step:int):
     starts=[]
     gc_vals=[]
-    for start in range(0, len(seq)- window_size+1, step):
+    for start in range(0, len(seq) - window_size+1, step):
         window=seq[start:start+window_size] 
         gc=gc_content(window)
         starts.append(start)
