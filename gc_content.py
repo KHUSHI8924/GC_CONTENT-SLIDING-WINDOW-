@@ -20,7 +20,7 @@ def sliding_window_gc(seq:str, window_size:int , step:int):
     return starts, gc_vals 
 
 def main():
-    seq=("ATGCGGTACGATGACGATGACGATGACGATGACAGTAGACGCGCGATGACGATGACGATGACGATGACATGCGTAGACGATGCAGTA" *5)
+    seq=("ATGCGGTACGATGACGATGACGATGACGATGACAGTAGACGCGCGATGACGATGACGA" *4)
     window_size = 50
     step = 10
     
