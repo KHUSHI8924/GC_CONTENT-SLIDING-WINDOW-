@@ -31,7 +31,7 @@ def main():
     plt.plot (positions, gc_vals, marker ='o', linestyle ='-', color = 'blue')
     plt.xlabel("Window start position")
     plt.ylabel("GC Content (%)")
-    plt.title(f"SLIDING WINDOW GC CONTENT (window = {window_size}, step= {step})")
+    plt.title(f"Sliding window GC content (window = {window_size}, step= {step})")
     plt.grid(True)
     plt.tight_layout()
     plt.show()
